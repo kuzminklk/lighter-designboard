@@ -91,6 +91,10 @@ html {
   font-size: 3.125vw;
 }
 
+header h3 {
+  letter-spacing: 0.025rem;
+}
+
 h1 {
   text-align: justify;
   font-size: 3.125rem;
@@ -111,7 +115,7 @@ h2 {
 }
 
 .prime h2 {
-  margin-left: 25vh;
+  margin-left: 12.75vw;
   margin-bottom: -5vh;
   font-style: oblique;
 }
@@ -131,10 +135,6 @@ h3 {
 
 .secondary h3 {
   margin: 8.25vh 0 3vh 0;
-}
-
-header h3 {
-  letter-spacing: 0.025rem;
 }
 
 p {
@@ -158,6 +158,14 @@ a:hover {
 em {
   -webkit-text-decoration: underline dashed;
           text-decoration: underline dashed;
+}
+
+footer {
+  color: #06060c;
+  font-family: "PitchWeb", Courier, monospace;
+}
+footer h3 {
+  margin: 1.125vh 0;
 }
 
 * {
@@ -195,6 +203,10 @@ main .icons section img {
   padding-top: 2.75vh;
   border-top: 0.75vh solid #fbfcff;
   border-radius: 0.25rem;
+  transition: transform 0.25s ease;
+}
+main .icons section img:hover {
+  transform: scale(1.05);
 }
 
 footer {
@@ -216,7 +228,7 @@ footer {
     font-size: 2.5rem;
   }
   .prime h2 {
-    margin-left: 5vh;
+    margin-left: 7.5vw;
     margin-bottom: -5vh;
     font-style: oblique;
   }
@@ -238,10 +250,16 @@ footer {
   footer {
     min-height: 12.5vh;
     padding: 2.5vh 1rem;
+    gap: 5vh;
   }
 }
 @media screen and (max-width: 450px) {
   html {
-    font-size: 7.5vw;
+    font-size: 8.75vw;
+  }
+  .prime h2 {
+    margin-left: 6.25vw;
+    margin-bottom: -10vh;
+    font-style: oblique;
   }
 }/*# sourceMappingURL=general.css.map */

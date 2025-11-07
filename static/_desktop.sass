@@ -53,6 +53,10 @@ html
 	font-family: $primary-font
 	font-size: $primary-size
 
+header
+	h3
+		letter-spacing: 0.025rem
+
 h1
 	text-align: justify
 	font-size: 3.125rem
@@ -72,7 +76,7 @@ h2
 
 .prime
 	h2
-		margin-left: 25vh
+		margin-left: 12.75vw
 		margin-bottom: -5vh
 		font-style: oblique
 
@@ -93,10 +97,6 @@ h3
 	h3
 		margin: 8.25vh 0 3vh 0
 
-header
-	h3
-		letter-spacing: 0.025rem
-
 p
 	font-size: 0.925rem
 	word-spacing: 0.05rem
@@ -114,6 +114,13 @@ a:hover
 
 em
 	text-decoration: underline dashed
+
+footer
+	color: $primary-color
+	font-family: $secondary-font
+
+	h3
+		margin: 1.125vh 0
 
 
 
@@ -140,6 +147,7 @@ main
 		padding: 7.5vh 0
 
 	.icons
+
 		section
 			display: flex
 			flex-flow: row
@@ -152,6 +160,10 @@ main
 				padding-top: 2.75vh
 				border-top: 0.75vh solid $secondary-color
 				border-radius: 0.25rem
+				transition: transform 0.25s ease
+
+			img:hover
+				transform: scale(1.05)
 
 footer
 	min-height: 17.5vh
