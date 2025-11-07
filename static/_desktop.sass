@@ -1,0 +1,165 @@
+
+
+
+// Colors
+
+$primary-color: #06060c
+$primary-color-2: #121218
+$primary-color-3: #2b2b30
+$secondary-color: #fbfcff
+$accent-color-1: #159564
+$accent-color-2: #e63348
+
+main, body
+	background: $primary-color
+	color: $secondary-color
+
+header
+	background: $secondary-color
+	color: $primary-color
+
+footer
+	background: $secondary-color
+	color: $primary-color
+	
+.primary-1
+	color: $primary-color
+	background-color: $secondary-color
+
+.primary-2
+	color: $primary-color-2
+	background-color: $secondary-color
+
+.primary-3
+	color: $primary-color-3
+	background-color: $secondary-color
+
+.accent-1
+	color: $accent-color-1
+
+.accent-2
+	color: $accent-color-2
+
+
+
+
+// Typography
+
+$primary-font: Inter,system-ui,Segoe UI,Roboto,Helvetica Neue,sans-serif
+$secondary-font: 'PitchWeb', Courier, monospace
+$primary-size: 3.125vw
+
+html
+	font-family: $primary-font
+	font-size: $primary-size
+
+h1
+	text-align: justify
+	font-size: 3.125rem
+	font-stretch: 75%
+	font-weight: 450
+	margin: 15vh 0 
+	line-height: 1.05
+
+h2
+	text-align: justify
+	font-size: 1.5rem
+	font-stretch: 80%
+	font-weight: 550
+	margin: 10vh 0
+	letter-spacing: 0.025rem
+	line-height: 1.05
+
+.prime
+	h2
+		margin-left: 25vh
+		margin-bottom: -5vh
+		font-style: oblique
+
+.secondary
+	h2
+		border-bottom: 0.25rem solid $secondary-color
+		margin-bottom: 15vh
+
+
+h3
+	text-align: justify
+	font-size: 1.125rem
+	font-stretch: 90%
+	font-weight: 500
+	margin: 5vh 0
+
+.secondary
+	h3
+		margin: 8.25vh 0 3vh 0
+
+header
+	h3
+		letter-spacing: 0.025rem
+
+p
+	font-size: 0.925rem
+	word-spacing: 0.05rem
+	letter-spacing: 0.055rem
+	line-height: 1.25
+	margin: 4.25vh 0 5vh 0 
+
+a
+	color: $primary-color
+	text-decoration: underline
+	transition: text-decoration-color 0.075s ease
+
+a:hover
+	text-decoration-color: rgba(0,0,0,0)
+
+em
+	text-decoration: underline dashed
+
+
+
+// Layout
+
+*
+	box-sizing: border-box
+
+html
+	scroll-behavior: smooth
+
+header
+	min-height: 17.5vh
+	padding: 2.5vh 3rem
+	display: flex
+	align-items: center
+
+main
+	min-height: 100vh
+	padding: 17.5vh 3rem
+
+	section
+		min-height: 75vh
+		padding: 7.5vh 0
+
+	.icons
+		section
+			display: flex
+			flex-flow: row
+			flex-wrap: wrap
+			align-items: center
+			gap: 7.5vw
+
+			img
+				max-width: 21.5vw
+				padding-top: 2.75vh
+				border-top: 0.75vh solid $secondary-color
+				border-radius: 0.25rem
+
+footer
+	min-height: 17.5vh
+	padding: 3.125vh 3rem
+
+	display: flex
+	flex-flow: row
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	gap: 0.5rem

@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main, body {
+  background: #06060c;
+  color: #fbfcff;
+}
+
+header {
+  background: #fbfcff;
+  color: #06060c;
+}
+
+footer {
+  background: #fbfcff;
+  color: #06060c;
+}
+
+.primary-1 {
+  color: #06060c;
+  background-color: #fbfcff;
+}
+
+.primary-2 {
+  color: #121218;
+  background-color: #fbfcff;
+}
+
+.primary-3 {
+  color: #2b2b30;
+  background-color: #fbfcff;
+}
+
+.accent-1 {
+  color: #159564;
+}
+
+.accent-2 {
+  color: #e63348;
+}
+
+html {
+  font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  font-size: 3.125vw;
+}
+
+h1 {
+  text-align: justify;
+  font-size: 3.125rem;
+  font-stretch: 75%;
+  font-weight: 450;
+  margin: 15vh 0;
+  line-height: 1.05;
+}
+
+h2 {
+  text-align: justify;
+  font-size: 1.5rem;
+  font-stretch: 80%;
+  font-weight: 550;
+  margin: 10vh 0;
+  letter-spacing: 0.025rem;
+  line-height: 1.05;
+}
+
+.prime h2 {
+  margin-left: 25vh;
+  margin-bottom: -5vh;
+  font-style: oblique;
+}
+
+.secondary h2 {
+  border-bottom: 0.25rem solid #fbfcff;
+  margin-bottom: 15vh;
+}
+
+h3 {
+  text-align: justify;
+  font-size: 1.125rem;
+  font-stretch: 90%;
+  font-weight: 500;
+  margin: 5vh 0;
+}
+
+.secondary h3 {
+  margin: 8.25vh 0 3vh 0;
+}
+
+header h3 {
+  letter-spacing: 0.025rem;
+}
+
+p {
+  font-size: 0.925rem;
+  word-spacing: 0.05rem;
+  letter-spacing: 0.055rem;
+  line-height: 1.25;
+  margin: 4.25vh 0 5vh 0;
+}
+
+a {
+  color: #06060c;
+  text-decoration: underline;
+  transition: text-decoration-color 0.075s ease;
+}
+
+a:hover {
+  text-decoration-color: rgba(0, 0, 0, 0);
+}
+
+em {
+  -webkit-text-decoration: underline dashed;
+          text-decoration: underline dashed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  min-height: 17.5vh;
+  padding: 2.5vh 3rem;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  min-height: 100vh;
+  padding: 17.5vh 3rem;
+}
+main section {
+  min-height: 75vh;
+  padding: 7.5vh 0;
+}
+main .icons section {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7.5vw;
+}
+main .icons section img {
+  max-width: 21.5vw;
+  padding-top: 2.75vh;
+  border-top: 0.75vh solid #fbfcff;
+  border-radius: 0.25rem;
+}
+
+footer {
+  min-height: 17.5vh;
+  padding: 3.125vh 3rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 730px) {
+  html {
+    font-size: 5vw;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .prime h2 {
+    margin-left: 5vh;
+    margin-bottom: -5vh;
+    font-style: oblique;
+  }
+  header {
+    min-height: 12.5vh;
+    padding: 2.5vh 1.5rem;
+  }
+  main {
+    min-height: 75vh;
+    padding: 7.5vh 1.5rem;
+  }
+  main .icons section {
+    flex-flow: column;
+    gap: 15vh;
+  }
+  main .icons section img {
+    max-width: 75vw;
+  }
+  footer {
+    min-height: 12.5vh;
+    padding: 2.5vh 1.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 7.5vw;
+  }
+}/*# sourceMappingURL=general.css.map */
